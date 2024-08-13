@@ -1,0 +1,71 @@
+
+.Landing-landing {
+  height: 100vh; /* Set height to be the full viewport height */
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensure the landing page is positioned relative */
+  overflow: hidden; /* Hide any content that exceeds the viewport */
+}
+
+
+.sentence-landing {
+  position: absolute;
+  top: 53%;
+  left: 80px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+}
+.sentence-landing span.connect {
+  color: #ffed86; /* Change color for "Connect" */
+}
+.slogan-landing span.community {
+  color: #eaff00; /* Change color for "Community Library" */
+}
+.slogan-landing {
+  position: absolute;
+  top: 60%;
+  margin-left: 347px;
+  transform: translateY(-50%) translateX(-50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase the text */
+  letter-spacing: 2px; /* Add letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+}
+
+.exploreButton-landing {
+  position: absolute;
+  left: 80px;
+  margin-top: 500px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  height: 50px;
+  width: 160px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect */
+.exploreButton-landing:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+/* Optional: Add additional effects */
+.exploreButton-landing:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.exploreButton-landing:active {
+  transform: scale(0.95); /* Add slight scaling effect on click */
+}

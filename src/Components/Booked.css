@@ -1,0 +1,65 @@
+.booked-booked {
+    background-image: url('image3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y; /* Repeat vertically */
+    position: relative;
+    min-height: 100vh; /* Change to min-height to ensure background covers entire page */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.booked-booked::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Set a negative z-index to place the overlay behind the text */
+}
+
+.library-grid-booked {
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.card-library-booked {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  width: 300px;
+  height: 300px;
+}
+
+.card-image-library-booked {
+  height: 70%;
+  background-color: #f0f0f0;
+}
+
+.card-image-library-booked img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-details-library-booked {
+  padding: 10px;
+  color: white;
+}
+
+.card-details-library-booked h3 {
+  margin: 0;
+}
+
+.card-details-library-booked p {
+  margin: 10px 0;
+}

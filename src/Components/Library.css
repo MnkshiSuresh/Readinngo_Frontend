@@ -1,0 +1,122 @@
+/* Library.css */
+
+.library-library {
+  background-image: url('./image3.jpg'); /* Set background image */
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Required for positioning the pseudo-element */
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.library-library.scroll-bg-library {
+  background-image: url('./image3.jpg'), url('./image3.jpg');
+  background-size: auto;
+  background-repeat: repeat-y;
+}
+
+.library-library::before {
+  content: ''; /* Add content to the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+}
+
+.genres-select-library {
+  position: fixed;
+  margin-left: 60px;
+  top: 150px;
+}
+
+.genres-select-library label {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(255, 255, 133);
+}
+
+.genres-select-library select {
+  margin-top: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.genres-select-library select:focus {
+  border-color: #000000;
+}
+
+.card-grid-library {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.card-library {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  width:300px;
+  height:250px;
+  margin-left: 30px;
+}
+.booked-button {
+  margin-left: 850px;
+  padding: 16px 40px 16px;
+  background-color: #0b2db6;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.booked-button:hover {
+  background-color: #3206b7;
+}
+
+
+.card-library:hover {
+  transform: scale(1.05);
+}
+
+.card-content-library {
+  display: flex;
+  
+  flex-direction: column;
+  height: 100%;
+  
+  
+}
+
+.card-image-library {
+  height: 70%;
+  background-color: #f0f0f0;
+}
+
+.card-details-library {
+  padding: 10px;
+  color: white;
+}
+
+.card-details-library h3 {
+  margin: 0;
+  
+}
+
+.card-details-library p {
+  margin: 10px 0;
+}

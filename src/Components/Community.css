@@ -1,0 +1,104 @@
+.bookswap-comm{
+  background-image: url('image3.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.bookswap-comm::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-bar-button-comm {
+  position: fixed;
+  left: 49%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 30px;
+  background-color: #2a0ceb;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 999;
+  border: none;
+  border-radius: 5px;
+  font-size: 19px;
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.bottom-bar-button-comm:hover {
+  background-color: #1e0aa8; /* Change color on hover */
+}
+
+.top-right-button-comm {
+  position: absolute;
+  top: 170px;
+  width:100px;
+  right: 90px;
+  background-color: rgba(255, 247, 247, 0.6);
+  color: rgb(0, 0, 0);
+  border: 2px solid transparent;
+  font-size: 24px;
+  text-decoration: none;
+font-weight:bolder;  
+padding: 15px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.top-right-button-comm:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+  border-color: #bababb; /* Add border color on hover */
+  color: #afafb1; /* Change text color on hover */
+}
+.rectangle-box-comm {
+  width:900px;
+  height: 160px;
+  display: flex;
+  color: white;
+  background-color: #000000;
+  margin-bottom: 20px; /* Adjust spacing between rectangle boxes */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  position: relative; /* Set position to relative */
+}
+
+.text-comm {
+  flex: 2;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  padding: 20px; /* Add padding to the text section */
+}
+
+.text-comm h2 {
+  margin: 0; /* Remove margin for the heading */
+}
+
+.image-comm {
+  flex: 1;
+}
+
+.image-comm img {
+  max-width: 100%; /* Ensure image does not exceed the container width */
+  max-height: 100%; /* Ensure image does not exceed the container height */
+  display: block; /* Ensure image is displayed as block element */
+  border-top-right-radius: 8px; /* Add border radius only to the top-right corner */
+  border-bottom-right-radius: 8px; /* Add border radius only to the bottom-right corner */
+  object-fit: cover; /* Make the image cover the entire container */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Align image to the top of the container */
+  right: 0; /* Align image to the right of the container */
+}

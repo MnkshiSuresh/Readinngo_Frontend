@@ -1,0 +1,47 @@
+.cnct {
+    background-image: url('image3.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnct::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Set a negative z-index to place the overlay behind the text */
+}
+
+.cnct-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(178, 177, 177);
+    z-index: 1; /* Set a positive z-index to bring the text to the front */
+}
+
+.cnct-content {
+    text-align: center;
+}
+
+.cnct-heading {
+    color: rgb(249, 249, 142);
+    font-size: 35px;
+    margin-bottom: 50px;
+    margin-top: 120px;
+}
+
+
+.cnct-description {
+    font-size: 18px;
+}

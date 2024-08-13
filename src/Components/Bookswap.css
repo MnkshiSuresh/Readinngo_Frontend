@@ -1,0 +1,77 @@
+/* Community.css */
+
+.community-community {
+    background-image: url('./image3.jpg'); /* Set background image */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Required for positioning the pseudo-element */
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .community-community.scroll-bg-community {
+    background-image: url('./image3.jpg'), url('./image3.jpg');
+    background-size: auto;
+    background-repeat: repeat-y;
+  }
+  
+  .community-community::before {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+  }
+  
+  .card-grid-community {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: relative; /* Added */
+    z-index: 1;
+    margin-bottom: 200px;
+  }
+  
+  .card-community {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 300px;
+    height: 250px;
+    margin-left: 30px;
+  }
+  
+  .card-community:hover {
+    transform: scale(1.05); /* Added */
+  }
+  
+  .card-content-community {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-image-community {
+    height: 70%;
+    background-color: #f0f0f0;
+  }
+  
+  .card-details-community {
+    padding: 10px;
+    color: white;
+  }
+  
+  .card-details-community h3 {
+    margin: 0;
+  }
+  
+  .card-details-community p {
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,37 @@
+/* Navbar.css */
+.nav-navbar {
+    position: fixed; /* Position the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%; /* Make the navbar full width */
+    background-color: rgba(0, 0, 0, 0.6); /* Translucent black background */
+    color: white; /* White text color */
+    padding: 10px; /* Add padding for spacing */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    z-index: 999; /* Set a high z-index to bring the navbar to the front */
+}
+
+.nav-text-navbar {
+    font-size: 30px; /* Adjust font size as needed */
+    margin-left: 50px; /* Add margin for spacing */
+    font-weight: bold; /* Make it bold */
+    color: rgb(255, 225, 0); /* Yellow text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 800px;
+}
+
+.nav-text-navbar a {
+    text-decoration: none; /* Remove text decoration for the link */
+    color: inherit; /* Inherit color */
+}
+
+.nav-links-navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-left: 80px; /* Add margin between the links */
+}
