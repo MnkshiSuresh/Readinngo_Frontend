@@ -31,7 +31,7 @@ Connect, share, and grow your love for books with Readinngo!
 
 To get started with Readinngo, follow these steps:
 
-##Library Hub
+## Library Hub
 
 ![Screenshot (110)](https://github.com/user-attachments/assets/c6ba53ae-a390-4aba-b369-29d5b645d667)
 
@@ -63,7 +63,7 @@ To get started with Readinngo, follow these steps:
 
 ![Screenshot (137)](https://github.com/user-attachments/assets/5a9fee87-28a9-45de-8599-d41d54141b08)
 
-##Community Hub
+## Community Hub
 
 ![Screenshot (128)](https://github.com/user-attachments/assets/741ca91a-ff13-4a49-9d4a-657878c3a9e7)
 
